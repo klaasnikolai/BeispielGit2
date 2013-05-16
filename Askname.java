@@ -1,5 +1,5 @@
 import java.io.*;
-class HelloWorld{
+class Askname{
 	public static void main(String[] args) throws IOException{
 		String CurLine = ""; // Line read from standard in
 		
@@ -8,12 +8,6 @@ class HelloWorld{
 		BufferedReader in = new BufferedReader(converter);
 		System.out.println();
 		
-		while (!(CurLine.equals("quit"))){
-			CurLine = in.readLine();
-			
-			if (!(CurLine.equals("quit"))){
-				System.out.println("Hello, " + CurLine);
-			}
-		}
+		Output o = new Output(in.readLine());
 	}
 }
