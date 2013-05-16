@@ -12,7 +12,7 @@ class HelloWorld{
 			CurLine = in.readLine();
 			
 			if (!(CurLine.equals("quit"))){
-				System.out.println("Hello " + CurLine);
+				System.out.println("Hello, " + CurLine);
 			}
 		}
 	}
